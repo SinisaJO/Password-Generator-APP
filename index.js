@@ -17,6 +17,9 @@ const pathTwo = document.getElementById("path2");
 const pathThree = document.getElementById("path3");
 const green = "#10B981";
 
+const popup = document.getElementById("popup")
+const mobilePopup = document.getElementById("mobilepopup")
+
 pwLength.disabled = true;
 pwLength.value = 8;
 
@@ -75,22 +78,40 @@ btn.addEventListener('click', () => {
     fieldTwo.textContent = generatePassword();
     fieldThree.textContent = generatePassword();
     fieldFour.textContent = generatePassword();
+    
 })
 
 fieldOne.addEventListener('click', () => {
-    navigator.clipboard.writeText(fieldOne.textContent);
+    navigator.clipboard.writeText(fieldOne.textContent)
+
+    popup.style.transform = "translateX(0%) translateY(0%)";
+    popup.style.opacity = 1
+    setTimeout(() => popup.style.opacity = '', 650)
 })
+
 fieldTwo.addEventListener('click', () => {
-    navigator.clipboard.writeText(fieldTwo.textContent);
+    navigator.clipboard.writeText(fieldTwo.textContent)
+
+    popup.style.transform = "translateX(410%) translateY(0%)";
+    popup.style.opacity = 1
+    setTimeout(() => popup.style.opacity = '', 650)
 })
+
 fieldThree.addEventListener('click', () => {
-    navigator.clipboard.writeText(fieldThree.textContent);
+    navigator.clipboard.writeText(fieldThree.textContent)
+
+    popup.style.transform = "translateX(0%) translateY(330%)";
+    popup.style.opacity = 1
+    setTimeout(() => popup.style.opacity = '', 650)
 })
+
 fieldFour.addEventListener('click', () => {
-    navigator.clipboard.writeText(fieldFour.textContent);
+    navigator.clipboard.writeText(fieldFour.textContent)
+
+    popup.style.transform = "translateX(410%) translateY(330%)";
+    popup.style.opacity = 1
+    setTimeout(() => popup.style.opacity = '', 650)
 })
-
-
 
 
 

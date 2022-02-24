@@ -163,6 +163,7 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.6875rem;
+  position: relative;
 }
 
 .card__password__item {
@@ -176,6 +177,24 @@ picture {
   line-height: 2.7;
   cursor: pointer;
   color: #10B981;
+}
+
+.card__password span {
+  position: absolute;
+  font-size: .85rem;
+  width: 55px;
+  height: 20px;
+  background: #10B981;
+  border-radius: 3px;
+  border: none;
+  color: #FFFFFF;
+  right: 14.8125rem;
+  top: 2.625rem;
+  text-align: center;
+  font-weight: 500;
+  z-index: 2;
+  line-height: 1.5;
+  opacity: 0;
 }
 
 @media (max-width: 650px) {
@@ -193,6 +212,14 @@ picture {
     gap: .2rem;
     font-size: .75rem;
     line-height: 1.7;
+  }
+  .card__password__item {
+    line-height: 3.5;
+  }
+  .card__password #mobilepopup {
+    right: 5.3125rem;
+    opacity: 0;
+    right: 210px;
   }
 }
 
