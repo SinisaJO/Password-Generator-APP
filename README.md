@@ -9,7 +9,7 @@ I was chalenged to do this project through Scrimbra JS course.
 
 This project was planned to be a simple password generator with 4 different options for user to choose from.
 </br>
-I added few different things, alongside copy to clipboard function there's password strength meter.
+I added few different things, alongside copy to clipboard function there's also password strength meter.
 
 <h2>Key learnings</h2>
 
