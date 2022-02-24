@@ -115,7 +115,7 @@ picture {
 }
 
 .card__text .input-container p {
-  font-size: 1rem;
+  font-size: .85rem;
 }
 
 .card__text .input-container .strength {
