@@ -82,35 +82,39 @@ btn.addEventListener('click', () => {
 })
 
 fieldOne.addEventListener('click', () => {
+    if (fieldFour.textContent !== ""){
     navigator.clipboard.writeText(fieldOne.textContent)
-
     popup.style.transform = "translateX(0%) translateY(0%)";
     popup.style.opacity = 1
     setTimeout(() => popup.style.opacity = '', 650)
+    }
 })
 
 fieldTwo.addEventListener('click', () => {
+    if (fieldFour.textContent !== ""){
     navigator.clipboard.writeText(fieldTwo.textContent)
-
     popup.style.transform = "translateX(410%) translateY(0%)";
     popup.style.opacity = 1
     setTimeout(() => popup.style.opacity = '', 650)
+    }
 })
 
 fieldThree.addEventListener('click', () => {
+    if (fieldFour.textContent !== ""){
     navigator.clipboard.writeText(fieldThree.textContent)
-
     popup.style.transform = "translateX(0%) translateY(330%)";
     popup.style.opacity = 1
     setTimeout(() => popup.style.opacity = '', 650)
+    }
 })
 
 fieldFour.addEventListener('click', () => {
-    navigator.clipboard.writeText(fieldFour.textContent)
-
-    popup.style.transform = "translateX(410%) translateY(330%)";
-    popup.style.opacity = 1
-    setTimeout(() => popup.style.opacity = '', 650)
+    if (fieldFour.textContent !== ""){
+        navigator.clipboard.writeText(fieldFour.textContent)
+        popup.style.transform = "translateX(410%) translateY(330%)";
+        popup.style.opacity = 1
+        setTimeout(() => popup.style.opacity = '', 650)
+    }
 })
 
 
