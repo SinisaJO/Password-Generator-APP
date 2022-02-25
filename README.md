@@ -20,4 +20,4 @@ I added few different things, alongside copy to clipboard function there's also 
 
 <h2>Contributing</h2>
 
-- Author: <a href="https://www.linkedin.com/in/sini%C5%A1a-jovanovi%C4%87-78320121a/" target="_blank">Sinisa Jovanovic</a>
+- Author: <a href="#" target="_blank">Sinisa Jovanovic</a>
