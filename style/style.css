@@ -28,6 +28,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -163,10 +167,9 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.6875rem;
-  position: relative;
 }
 
-.card__password__item {
+.card__password__box {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   width: 13.125rem;
@@ -177,6 +180,7 @@ picture {
   line-height: 2.7;
   cursor: pointer;
   color: #10B981;
+  position: relative;
 }
 
 .card__password span {
@@ -185,11 +189,11 @@ picture {
   width: 55px;
   height: 20px;
   background: #10B981;
-  border-radius: 3px;
+  border-radius: 3px 0 3px 0;
   border: none;
   color: #FFFFFF;
-  right: 14.8125rem;
-  top: 2.625rem;
+  right: 0;
+  bottom: 0;
   text-align: center;
   font-weight: 500;
   z-index: 2;
@@ -213,13 +217,8 @@ picture {
     font-size: .75rem;
     line-height: 1.7;
   }
-  .card__password__item {
+  .card__password__box {
     line-height: 3.5;
-  }
-  .card__password #mobilepopup {
-    right: 5.3125rem;
-    opacity: 0;
-    right: 210px;
   }
 }
 
@@ -229,8 +228,8 @@ button {
 }
 
 button:active {
-  -webkit-transform: scale(0.985);
-          transform: scale(0.985);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .generate-btn {
@@ -253,7 +252,7 @@ button:active {
 }
 
 .generate-btn rect {
-  fill: #10B981;
+  fill: transparent;
 }
 
 .input-btn {
