@@ -1,6 +1,6 @@
 <h1 align="center">Password-Generator-APP</h1>
 <p align="center"><strong>Password generator application with password strength meter and copy to clipboard options.</strong>
-<div align="center"><img src="https://i.ibb.co/g6PMvZh/netlify-app.png"></img></div>
+<div align="center"><img src="https://i.ibb.co/5GMvrbL/Fire-Shot-Capture-019-Password-Generator-gracious-hopper-8ab25c-netlify-app.png"></img></div>
 <h2>About</h2>
 I was chalenged to do this project through Scrimbra JS course.
 </br>
