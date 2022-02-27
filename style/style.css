@@ -75,8 +75,53 @@ picture {
   padding-bottom: 1rem;
 }
 
+@-webkit-keyframes animation {
+  0% {
+    background: -webkit-gradient(linear, right top, left top, from(#10B981), to(#9198e5));
+    background: linear-gradient(to left, #10B981, #9198e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#9198e5), color-stop(#10b981), to(#9198e5));
+    background: linear-gradient(to right, #9198e5, #10b981, #9198e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-gradient(linear, right top, left top, from(#9198e5), to(#10B981));
+    background: linear-gradient(to left, #9198e5, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes animation {
+  0% {
+    background: -webkit-gradient(linear, right top, left top, from(#10B981), to(#9198e5));
+    background: linear-gradient(to left, #10B981, #9198e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#9198e5), color-stop(#10b981), to(#9198e5));
+    background: linear-gradient(to right, #9198e5, #10b981, #9198e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-gradient(linear, right top, left top, from(#9198e5), to(#10B981));
+    background: linear-gradient(to left, #9198e5, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 .card strong {
-  color: #10B981;
+  background: -webkit-gradient(linear, right top, left top, from(#10B981), to(#9198e5));
+  background: linear-gradient(to left, #10B981, #9198e5);
+  -webkit-animation: animation 1s infinite;
+          animation: animation 1s infinite;
 }
 
 .card__text {
