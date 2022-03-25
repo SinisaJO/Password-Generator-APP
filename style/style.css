@@ -167,6 +167,7 @@ picture {
   line-height: 2.7;
   color: #10B981;
   position: relative;
+  cursor: default;
 }
 .card__password__box .copy-icon {
   position: absolute;
