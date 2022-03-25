@@ -27,7 +27,7 @@ const iconFour = document.getElementById("copy-icon-four")
 const plusBtn = document.querySelector(".plus-btn");
 const minusBtn = document.querySelector(".minus-btn");
 
-const arr = ["`","~","!","@","#","$","%","^","&","*","(",")","_","+","|", "?","<",">",";",":","{","}","[","]","1","2","3","4","5","6","7","8","9","0","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","C","V","B","N","M","q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"]
+const arr = ["~","!","@","#","$","%","^","&","*","_","+","<",">","1","2","3","4","5","6","7","8","9","0","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","C","V","B","N","M","q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"]
 
 
 pwLength.disabled = true;
@@ -87,19 +87,19 @@ iconFour.addEventListener('click', () => {
 // strength password color changing 
 function strColor() {
     if (pwLength.value < 11){
-        str.innerHTML = "Weak";
+        str.innerHTML = "Weak!";
         str.style.color = "red";
         pathOne.style.fill = "red";
         pathTwo.style.fill = "white";
         pathThree.style.fill = "white";
     }else if (pwLength.value < 15){
-        str.innerHTML = "Good";
+        str.innerHTML = "Good!";
         str.style.color = "orange";
         pathOne.style.fill = "orange";
         pathTwo.style.fill = "orange";
         pathThree.style.fill = "white";
     }else {
-        str.innerHTML = "Strong";
+        str.innerHTML = "Strong!";
         str.style.color = green;
         pathOne.style.fill = green;
         pathTwo.style.fill = green;
