@@ -87,19 +87,19 @@ iconFour.addEventListener('click', () => {
 // strength password color changing 
 function strColor() {
     if (pwLength.value < 11){
-        str.innerHTML = "Weak!";
+        str.innerHTML = "Weak";
         str.style.color = "red";
         pathOne.style.fill = "red";
         pathTwo.style.fill = "white";
         pathThree.style.fill = "white";
     }else if (pwLength.value < 15){
-        str.innerHTML = "Good!";
+        str.innerHTML = "Good";
         str.style.color = "orange";
         pathOne.style.fill = "orange";
         pathTwo.style.fill = "orange";
         pathThree.style.fill = "white";
     }else {
-        str.innerHTML = "Strong!";
+        str.innerHTML = "Strong";
         str.style.color = green;
         pathOne.style.fill = green;
         pathTwo.style.fill = green;
