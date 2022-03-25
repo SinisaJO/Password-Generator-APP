@@ -108,6 +108,14 @@
             cursor: pointer;
             color: $clr-green;
             position: relative;
+
+
+            #copy-icon {
+                position:absolute;
+                top: -15px;
+                right: -10px;
+                fill: $clr-light;
+            }
         }
 
         span {
