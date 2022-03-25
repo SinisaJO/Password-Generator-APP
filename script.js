@@ -17,6 +17,13 @@ const pathTwo = document.getElementById("path2");
 const pathThree = document.getElementById("path3");
 const green = "#10B981";
 
+const iconOne = document.getElementById("copy-icon-one")
+const iconTwo = document.getElementById("copy-icon-two")
+const iconThree = document.getElementById("copy-icon-three")
+const iconFour = document.getElementById("copy-icon-four")
+
+
+
 const plusBtn = document.querySelector(".plus-btn");
 const minusBtn = document.querySelector(".minus-btn");
 
@@ -44,7 +51,7 @@ btn.addEventListener('click', () => {
     
 })
 
-fieldOne.addEventListener('click', () => {
+iconOne.addEventListener('click', () => {
     if (fieldFour.textContent !== ""){
     navigator.clipboard.writeText(fieldOne.textContent)
     popupOne.style.opacity = 1
@@ -52,7 +59,7 @@ fieldOne.addEventListener('click', () => {
     }
 })
 
-fieldTwo.addEventListener('click', () => {
+iconTwo.addEventListener('click', () => {
     if (fieldFour.textContent !== ""){
     navigator.clipboard.writeText(fieldTwo.textContent)
     popupTwo.style.opacity = 1
@@ -60,7 +67,7 @@ fieldTwo.addEventListener('click', () => {
     }
 })
 
-fieldThree.addEventListener('click', () => {
+iconThree.addEventListener('click', () => {
     if (fieldFour.textContent !== ""){
     navigator.clipboard.writeText(fieldThree.textContent)
     popupThree.style.opacity = 1
@@ -68,7 +75,7 @@ fieldThree.addEventListener('click', () => {
     }
 })
 
-fieldFour.addEventListener('click', () => {
+iconFour.addEventListener('click', () => {
     if (fieldFour.textContent !== ""){
         navigator.clipboard.writeText(fieldFour.textContent)
         popupFour.style.opacity = 1
