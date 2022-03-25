@@ -105,16 +105,19 @@
             border-radius: 6px;
             text-align: center;
             line-height: 2.7;
-            cursor: pointer;
             color: $clr-green;
             position: relative;
 
 
-            #copy-icon {
+            .copy-icon {
                 position:absolute;
                 top: -15px;
                 right: -10px;
-                fill: $clr-light;
+                fill: $clr-green;
+                cursor: pointer;
+            }
+            .copy-icon:active {
+                opacity: .5;
             }
         }
 

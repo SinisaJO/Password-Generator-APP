@@ -165,15 +165,18 @@ picture {
   border-radius: 6px;
   text-align: center;
   line-height: 2.7;
-  cursor: pointer;
   color: #10B981;
   position: relative;
 }
-.card__password__box #copy-icon {
+.card__password__box .copy-icon {
   position: absolute;
   top: -15px;
   right: -10px;
-  fill: #FFFFFF;
+  fill: #10B981;
+  cursor: pointer;
+}
+.card__password__box .copy-icon:active {
+  opacity: 0.5;
 }
 .card__password span {
   position: absolute;
