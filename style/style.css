@@ -51,6 +51,10 @@ picture {
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 .card {
   background: #1F2937;
   margin: 2rem;
