@@ -49,6 +49,10 @@ btn.addEventListener('click', () => {
     fieldThree.textContent = generatePassword();
     fieldFour.textContent = generatePassword();
     
+    iconFour.classList.remove("hidden")
+    iconThree.classList.remove("hidden")
+    iconTwo.classList.remove("hidden")
+    iconOne.classList.remove("hidden")
 })
 
 iconOne.addEventListener('click', () => {
